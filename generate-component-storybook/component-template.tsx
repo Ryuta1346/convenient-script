@@ -1,3 +1,3 @@
-export const Template = () => 
+export const Template = () => {
   return <></>
-}{
+}
