@@ -1,4 +1,4 @@
-#!bin/bash
+#!/usr/bin/env bash
 
 component=$1
 if [ "$2" ]; then
@@ -19,5 +19,5 @@ cp $CURRENT/component-template.tsx "${baseComp}.tsx"
 cp $CURRENT/storybook-template.stories.tsx "${sbComp}.stories.tsx"
 
 # 各ファイルにテンプレを書き込む
-sed -i -e "s/Template/${component}/g" "${baseComp}.tsx"
-sed -i -e "s/Template/${component}/g" "${sbComp}.stories.tsx"
+sed -i "" "s/Template/${component}/g" "${baseComp}.tsx"
+sed -i "" "s/Template/${component}/g" "${sbComp}.stories.tsx"
